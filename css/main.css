@@ -1,0 +1,659 @@
+/* nesta parte estamos tratando de declaraçoes globais, como as propriedades do body e dos headers*/
+body {
+    margin: 0;
+    display: block;
+    font-family: 'Segoe UI';
+    color: #929292;
+    font-size: calc(12px + 0.31vw);
+    background-color: white;
+}
+
+h1 {
+    font-size: calc(12px + 0.41vw);
+    font-weight: 500;
+    line-height: 1;
+}
+
+h2 {
+    font-size: calc(12px + 0.41vw);
+    font-weight: bold;
+    line-height: 1;
+}
+
+h3 {
+    font-size: calc(12px + 0.5vw);
+    color: #f14818;
+    font-weight: 500;
+}
+
+input {
+    font-size: calc(12px + 1vw);
+    display: block;
+    width: 90%;
+    border-radius: 0px;
+    border: 0;
+    padding: 2%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #196ab4;
+}
+
+
+/* aqui estamos tratando da parte da pagina que possui imagens coloridas com descriçoes
+e botões da mesma cor */
+#block {
+    width: 350px;
+    height: 450px;
+    display: inline-block;
+    text-align: center;
+}
+
+#block img {
+    padding: 35px;
+    width: 80px;
+    height: auto;
+    border-radius: 110px;
+}
+
+#divisor {
+    border-top: 4px solid #dedede;
+    width: 53px;
+}
+
+.logo {
+    padding: 25px;
+    padding-left: 145;
+    width: 30%;
+}
+
+.logo img {
+    height: 30px;
+}
+
+/*descrição a baixo da imagem principal*/
+.desc {
+    width: 85%;
+    height: auto;
+    padding-top: 5%;
+    text-align: center;
+    font-size: calc(12px + 0.6vw);
+    color: #747474;
+    margin: 0 auto;
+}
+
+
+
+
+/* aqui estamos tratando da imagem e suas informações na parte inferior da tela*/
+#banner {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 752px;
+    object-fit: scale-down;
+    background-image: url("../assets/mashroom-full-size.jfif");
+    background-size: 100% auto;
+    filter: brightness(30%);
+}
+
+#text-over-banner {
+    position: relative;
+    padding: 10%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: white;
+    font-size: calc(8px + 2.6vw);
+}
+
+
+
+/* aqui estamos tratando da tabela de informações na parte inferior da tela, 
+o design se assimila ao de uma tabela*/
+
+#fit-table {
+    border: 4px solid #dedede;
+    width: 1200px;
+    height: auto;
+}
+
+.table-cell {
+    width: 253px;
+    height: 173px;
+    display: inline-block;
+    font-size: calc(12px + 0.31vw);
+    padding: 10px 20px 10px 20px;
+    color: #666666;
+}
+
+#part1,
+#part2,
+#part3 {
+    border-right: 4px solid #dedede;
+}
+
+
+/* aqui estamos tratando da parte no layout que possui multiplos blocos de informação*/
+
+.info-title {
+    text-align: center;
+    font-size: calc(12px + 0.8vw);
+    color: #747474;
+    font-weight: 350;
+    margin-top: 60px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    padding-top: 28px;
+}
+
+.section {
+    width: 600px;
+    height: auto;
+    color: white;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.section-inside-text {
+    position: relative;
+    text-align: justify !important;
+    float: right;
+    width: 470px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.main-info {
+    width: 100%;
+    height: auto;
+}
+
+/* esta parte visa tratar do input de texto no final do layout*/
+.form-info {
+    width: 100%;
+    height: 50%;
+    font-size: calc(12px + 0.9vw);
+    color: #6a6a6a;
+    text-align: center;
+}
+
+.form {
+    width: 499px;
+    height: auto;
+    background-color: #e6e6e6;
+    margin: auto;
+}
+
+
+.form label {
+    float: left;
+    margin: 30px 0 5px 27px;
+    font-size: calc(12px + 0.36vw);
+}
+
+.form input {
+    display: inline-block;
+    text-align: left;
+}
+
+/* definindo as propriedades de cada botão individualmente*/
+.button1 {
+    color: #7fba00;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 7px;
+    border: 2px solid #7fba00;
+}
+
+.button1:hover {
+    color: #ffffff !important;
+    background: #7fba00;
+}
+
+.button2 {
+    color: #00a4ef;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 7px;
+    border: 2px solid #00a4ef;
+}
+
+.button2:hover {
+    color: #ffffff !important;
+    background: #00a4ef;
+}
+
+.button3 {
+    color: #ffb900;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 7px;
+    border: 2px solid #ffb900;
+}
+
+.button3:hover {
+    background: #ffb900;
+    color: white !important;
+}
+
+.button4 {
+    background-color: #00a4ef;
+    border: none;
+    color: white;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: calc(12px + 1vw);
+    margin: 40px 2px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    font-weight: 500;
+}
+
+.button5 {
+    position: relative;
+    float: right;
+    height: 43%;
+    width: 8.5%;
+    background-color: #002050;
+    text-align: center;
+    text-decoration: none;
+    font-size: calc(5px + 0.7vw);
+    font-weight: 400;
+    padding-top: 0.5vw;
+    margin-top: 1%;
+    left: calc(16.6vw + 160px);
+}
+
+.button6 {
+    position: absolute;
+    background-color: #00a4ef;
+    border: none;
+    width: calc(13.4vw + 16px);
+    height: auto;
+    text-decoration: none;
+    font-size: calc(6px + 1.32vw);
+    font-weight: 500;
+    top: 58%;
+    left: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* aqui estamos tratando da imagem no topo da tela, o logo utiliza position absolute 
+a fim de ser posicionado corretamente em cima da imagem*/
+.info-title p {
+    text-align: center;
+    font-size: calc(12px + 0.8vw);
+    color: #747474;
+    font-weight: 350;
+}
+
+.lorem-logo {
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
+
+.notebook-image {
+    height: 820px;
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.description-image-top {
+    position: absolute;
+    top: 43%;
+    left: 8%;
+    font-size: calc(12px + 1.2vw);
+    font-weight: 200;
+    color: white;
+}
+
+.section-inside-image {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: left;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+.text-image-top {
+    position: absolute;
+    top: 22%;
+    left: 8%;
+    font-size: calc(12px + 3.8vw);
+    font-weight: 600;
+    color: white;
+}
+
+/* aqui estamos tratando da barra de navegação no topo da tela*/
+.menu-mobile {
+    display: none;
+    border: none;
+}
+
+.bluebar img {
+    position: relative;
+    float: left;
+    width: calc(8.1vw + 25px);
+    float: left;
+    left: 10%;
+    padding-top: 1.2%;
+}
+
+.bluebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.bluebar ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.bluebar ul li {
+    position: relative;
+    float: right;
+    display: inline-block;
+    margin-left: calc(5.9vw + 10px);
+    padding-top: 1.4%;
+    right: 30%;
+}
+
+.bluebar {
+    background-color: #2571b7;
+    width: 100%;
+    height: calc(3.2vw + 20px);
+}
+
+.bluebar-focus {
+    position: relative;
+    text-align: center;
+}
+
+/* esta parte trata dos logos da parte inferior da tela, como foram utilizadas 2 imagens, 
+elas precisam ter propriedades diferentesa fim de manter suas proporçoes individuais*/
+.bottom-brand {
+    height: auto;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.logo-bottom {
+    width: 10%;
+    max-width: 38px;
+    padding-left: 2%;
+}
+
+.logo-name {
+    width: 30%;
+    max-width: 137px;
+    padding-right: 2%;
+}
+
+
+/* a partir desta parte no css estaremos tratando da responsividade usando media-quarrys*/
+@media screen and (max-width: 1220px) {
+    .table-cell {
+        display: block;
+        border: 4px solid #dedede;
+    }
+
+    #fit-table {
+        width: auto;
+        border: 0;
+    }
+
+    #part1,
+    #part2,
+    #part3 {
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #divisor {
+        display: none;
+    }
+
+    #block {
+        display: block;
+        width: 85%;
+        height: auto;
+        padding-bottom: 25px;
+        border-bottom: 4px solid #dedede;
+        text-align: left;
+        margin: 0;
+    }
+
+    #block img {
+        position: relative;
+        float: right;
+        top: 65px;
+        height: 55px;
+        padding: 15px;
+        width: auto;
+    }
+
+    #block p {
+        width: 65%;
+    }
+
+    #container-blocks {
+        padding-top: -45px;
+    }
+}
+
+@media screen and (min-width: 474px) and (max-width: 1000px) {
+    #block img {
+        top: 45px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form {
+        width: 90%;
+    }
+
+    .button4 {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .table-cell {
+        width: 70%;
+    }
+
+    #block p {
+        width: 50%;
+    }
+
+    .lorem-logo {
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #fit-table {
+        margin-top: 20px;
+    }
+
+    .section {
+        margin-right: 0;
+    }
+
+    .bluebar {
+        background-color: #2571b7;
+        width: 100%;
+        height: calc(6vw + 25px);
+    }
+
+    .lorem-logo {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .bluebar ul {
+        display: none;
+    }
+
+    .bluebar img {
+        display: none;
+    }
+
+    .button5 {
+        height: 55%;
+        width: 30%;
+        padding-top: 1.1vw;
+        font-size: calc(3vw + 3px);
+        font-weight: bold;
+        margin-top: 2%;
+        left: -5%;
+
+    }
+
+    .menu-mobile {
+        margin-top: 2%;
+        margin-left: 3%;
+        display: inline-block;
+        height: 60%;
+        width: 7%;
+    }
+
+    .text-image-top {
+        position: absolute;
+        top: 7%;
+        left: 15%;
+        font-size: calc(10vw + 8px);
+    }
+
+    .description-image-top {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+        font-size: calc(3px + 6vw);
+        font-weight: 400;
+    }
+
+    .notebook-image {
+        height: calc(25vw + 520px);
+        width: 100%;
+        object-fit: none;
+    }
+
+    .button6 {
+        line-height: 13vw;
+        width: 60%;
+        font-size: calc(8px + 4vw);
+        top: 52%;
+        left: 20%;
+        border: none;
+    }
+
+    .info-title p {
+        text-align: center;
+        font-size: calc(12px + 0.8vw);
+        color: #747474;
+        font-weight: 350;
+        margin: 0 18% 0 18%;
+    }
+
+    .section {
+        width: 80%;
+    }
+
+    .section-inside-text {
+        width: 70%;
+        padding: 0;
+        margin-right: 10%;
+    }
+
+    .section img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+    .button6 {
+        top: 62% !important;
+    }
+}
+
+@media screen and (min-width: 1166px) {
+    #banner::before {
+        background-image: url("../assets/mashroom.png");
+    }
+
+    #text-over-banner {
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .section-inside-image {
+        width: 70px;
+        height: 70px;
+        padding-top: 0;
+    }
+
+    .section-inside-text {
+        width: 60%;
+        padding: 0;
+        font-size: calc(2px + 3vw);
+    }
+
+    .section img {
+        width: 100%;
+        padding-top: 20%;
+    }
+
+}
+
+@media only screen and (max-width: 295px) {
+    .section-inside-text {
+        width: 60%;
+        padding: 0;
+        font-size: calc(2px + 3vw);
+        margin: 0;
+    }
+
+    .section img {
+        height: auto;
+        width: 100%;
+    }
+
+    .section {
+        padding: 5%;
+    }
+}
